@@ -35,6 +35,7 @@ int main(void)
         /* stop bit */ 1
     );
 
+
     // Register a callback to process a Rx (receive) interrupt.
     serial_port.attach(&on_rx_interrupt, SerialBase::RxIrq);
 }
